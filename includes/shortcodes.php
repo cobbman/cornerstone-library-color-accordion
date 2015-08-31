@@ -3,30 +3,30 @@
 // Adv Accordion
 // =============================================================================
 
-function csl_shortcode_adv_accordion( $atts, $content = null ) {
+function csl_color_accordion_shortcode( $atts, $content = null ) {
   extract( shortcode_atts( array(
     'id'    => '',
     'class' => '',
     'style' => ''
-  ), $atts, 'csl_adv_accordion' ) );
+  ), $atts, 'csl_color_accordion' ) );
 
   $id    = ( $id    != '' ) ? 'id="' . esc_attr( $id ) . '"' : '';
-  $class = ( $class != '' ) ? 'x-accordion advanced ' . esc_attr( $class ) : 'x-accordion advanced';
+  $class = ( $class != '' ) ? 'class="x-accordion color ' . esc_attr( $class ) . '"' : 'class="x-accordion color"';
   $style = ( $style != '' ) ? 'style="' . $style . '"' : '';
 
-  $output = "<div {$id} class=\"{$class}\" {$style}>" . do_shortcode( $content ) . "</div>";
+  $output = "<div {$id} {$class} {$style}>" . do_shortcode( $content ) . "</div>";
 
   return $output;
 }
 
-add_shortcode( 'csl_adv_accordion', 'csl_shortcode_adv_accordion' );
+add_shortcode( 'csl_color_accordion', 'csl_color_accordion_shortcode' );
 
 
 
 // Adv Accordion Item
 // =============================================================================
 
-function csl_shortcode_adv_accordion_item( $atts, $content = null ) {
+function csl_color_accordion_item_shortcode( $atts, $content = null ) {
   extract( shortcode_atts( array(
     'id'          => '',
     'class'       => '',
@@ -36,10 +36,10 @@ function csl_shortcode_adv_accordion_item( $atts, $content = null ) {
     'title_extra' => '',
     'bg_color'    => '',
     'open'        => ''
-  ), $atts, 'csl_adv_accordion_item' ) );
+  ), $atts, 'csl_color_accordion_item' ) );
 
   $id        = ( $id        != ''     ) ? 'id="' . esc_attr( $id ) . '"' : '';
-  $class     = ( $class     != ''     ) ? 'x-accordion-group ' . esc_attr( $class ) : 'x-accordion-group';
+  $class     = ( $class     != ''     ) ? 'class="x-accordion-group ' . esc_attr( $class ) . '"' : 'class="x-accordion-group"';
   $style     = ( $style     != ''     ) ? 'style="' . $style . '"' : '';
   $parent_id = ( $parent_id != ''     ) ? 'data-parent="#' . $parent_id . '"' : '';
   $title     = ( $title     != ''     ) ? $title : '';
@@ -51,7 +51,7 @@ function csl_shortcode_adv_accordion_item( $atts, $content = null ) {
 
   if ( $open == 'collapse in' ) {
 
-    $output = "<div {$id} class=\"{$class}\" {$style}>"
+    $output = "<div {$id} {$class} {$style}>"
               . '<div class="x-accordion-heading">'
                 . "<a class=\"x-accordion-toggle\" {$color} data-toggle=\"collapse\" {$parent_id} href=\"#collapse-{$count}\"><span class=\"adv-title\">{$title}</span> <span class=\"extra-title\">{$title_extra}</span></a>"
               . '</div>'
@@ -64,7 +64,7 @@ function csl_shortcode_adv_accordion_item( $atts, $content = null ) {
 
   } else {
 
-    $output = "<div {$id} class=\"{$class}\" {$style}>"
+    $output = "<div {$id} {$class} {$style}>"
               . '<div class="x-accordion-heading">'
                 . "<a class=\"x-accordion-toggle collapsed\" {$color} data-toggle=\"collapse\" {$parent_id} href=\"#collapse-{$count}\"><span class=\"adv-title\">{$title}</span> <span class=\"extra-title\">{$title_extra}</span></a>"
               . '</div>'
@@ -80,4 +80,4 @@ function csl_shortcode_adv_accordion_item( $atts, $content = null ) {
   return $output;
 }
 
-add_shortcode( 'csl_adv_accordion_item', 'csl_shortcode_adv_accordion_item' );
+add_shortcode( 'csl_color_accordion_item', 'csl_color_accordion_item_shortcode' );

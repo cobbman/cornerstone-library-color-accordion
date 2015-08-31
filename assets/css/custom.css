@@ -1,16 +1,16 @@
-.x-accordion.advanced .x-accordion-group {
+.x-accordion.color .x-accordion-group {
   margin-bottom: 0;
   border: none;
   box-shadow: none;
 }
-.x-accordion.advanced .x-accordion-heading .x-accordion-toggle {
+.x-accordion.color .x-accordion-heading .x-accordion-toggle {
   background-color: auto;
   color: #fff;
   font-size: 40px;
   overflow: hidden;
   text-align: center;
 }
-.x-accordion.advanced .x-accordion-heading .x-accordion-toggle:before {
+.x-accordion.color .x-accordion-heading .x-accordion-toggle:before {
   color: #fff;
   float: left;
   content: "";
@@ -19,36 +19,36 @@
 .x-accordion .x-accordion-heading .x-accordion-toggle.collapsed:before {
   transform: rotate(0);
 }
-.x-accordion.advanced .x-accordion-heading .x-accordion-toggle .adv-title {
+.x-accordion.color .x-accordion-heading .x-accordion-toggle .adv-title {
   display: block;
   line-height: 1.1;
 }
-.x-accordion.advanced .x-accordion-heading .x-accordion-toggle .extra-title {
+.x-accordion.color .x-accordion-heading .x-accordion-toggle .extra-title {
   display: block;
   font-size: 38%;
 }
-.x-accordion.advanced .x-accordion-heading.collapsed:before {
+.x-accordion.color .x-accordion-heading.collapsed:before {
   color: #fff;
 }
-.x-accordion.advanced .x-accordion-inner {
+.x-accordion.color .x-accordion-inner {
   border: 1px solid #ccc;
   color: #002a5b;
   font-size: 120%;
   padding: 1em 2em;
 }
 @media screen and (min-width: 979px) {
-  .x-accordion.advanced .x-accordion-heading .x-accordion-toggle {
+  .x-accordion.color .x-accordion-heading .x-accordion-toggle {
     font-size: 50px;
     text-align: left;
   }
-  .x-accordion.advanced .x-accordion-heading .x-accordion-toggle:before {
+  .x-accordion.color .x-accordion-heading .x-accordion-toggle:before {
     content: "\f0da";
   }
-  .x-accordion.advanced .x-accordion-heading .x-accordion-toggle .adv-title {
+  .x-accordion.color .x-accordion-heading .x-accordion-toggle .adv-title {
     float: left;
     width: 50%;
   }
-  .x-accordion.advanced .x-accordion-heading .x-accordion-toggle .extra-title {
+  .x-accordion.color .x-accordion-heading .x-accordion-toggle .extra-title {
     display: block;
     float: left;
     /*font-size: 18px;*/
@@ -56,10 +56,10 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .x-accordion.advanced .x-accordion-heading .x-accordion-toggle {
+  .x-accordion.color .x-accordion-heading .x-accordion-toggle {
     /*font-size: 70px;*/
   }
-  .x-accordion.advanced .x-accordion-heading .x-accordion-toggle .extra-title {
+  .x-accordion.color .x-accordion-heading .x-accordion-toggle .extra-title {
     display: inline;
     font-size: 40%;
   }

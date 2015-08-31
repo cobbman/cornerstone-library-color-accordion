@@ -1,13 +1,13 @@
 <?php
 
-class CSL_Adv_Accordion_Item extends Cornerstone_Element_Base {
+class CSL_Color_Accordion_Item extends Cornerstone_Element_Base {
 
   public function data() {
     return array(
-      'name'        => 'adv-accordion-item',
-      'title'       => __( 'Advanced Accordion Item', csl18n() ),
+      'name'        => 'color-accordion-item',
+      'title'       => __( 'Color Accordion Item', csl18n() ),
       'section'     => '_content',
-      'description' => __( 'Advanced Accordion Item description.', csl18n() ),
+      'description' => __( 'Color Accordion Item description.', csl18n() ),
       'supports'    => array( 'id', 'class', 'style' ),
       'render'      => false,
       'delegate'    => true
@@ -44,6 +44,8 @@ class CSL_Adv_Accordion_Item extends Cornerstone_Element_Base {
       '#002a5b' // Blue
     );
 
+    // Regular content
+
     $this->addControl(
       'content',
       'editor',
@@ -51,6 +53,8 @@ class CSL_Adv_Accordion_Item extends Cornerstone_Element_Base {
       __( 'Include your desired content for your Accordion Item here.', csl18n() ),
       ''
     );
+
+    // toggle open
 
     $this->addControl(
       'open',

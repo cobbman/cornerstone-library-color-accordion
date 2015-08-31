@@ -1,15 +1,15 @@
 <?php
 
-class CSL_Adv_Accordion extends Cornerstone_Element_Base {
+class CSL_Color_Accordion extends Cornerstone_Element_Base {
 
   public function data() {
     return array(
-      'name'        => 'adv-accordion',
-      'title'       => __( 'Advanced Accordion', csl18n() ),
+      'name'        => 'color-accordion',
+      'title'       => __( 'Color Accordion', csl18n() ),
       'section'     => 'content',
-      'description' => __( 'Advanced Accordion description.', csl18n() ),
+      'description' => __( 'Color Accordion description.', csl18n() ),
       'supports'    => array( 'class', 'style' ),
-      'childType'   => 'adv-accordion-item',
+      'childType'   => 'color-accordion-item',
       'renderChild' => true
     );
   }
@@ -19,7 +19,7 @@ class CSL_Adv_Accordion extends Cornerstone_Element_Base {
     $this->addControl(
       'elements',
       'sortable',
-      __( 'Advanced Accordion Items', csl18n() ),
+      __( 'Color Accordion Items', csl18n() ),
       __( 'Add a new item to your accordion.', csl18n() ),
       array(
         array( 'title' => __( 'Accordion Item 1', csl18n() ), 'content' => __( 'Add some content to your accordion item here.', csl18n() ), 'open' => true ),
@@ -60,15 +60,15 @@ class CSL_Adv_Accordion extends Cornerstone_Element_Base {
 
       $e['parent_id'] = ( $link_items == 'true' && $id != '' ) ? $id : '';
 
-      $contents .= '[csl_adv_accordion_item title="' . $e['title'] . '" ';
+      $contents .= '[csl_color_accordion_item title="' . $e['title'] . '" ';
       $contents .= 'title_extra="' . $e['title_extra'] . '" '; // custom
       $contents .= 'bg_color="' . $e['accordion_color'] . '" '; // custom
       $contents .= ( $e['parent_id'] != '' ) ? 'parent_id="' . $e['parent_id']  . '" ' : '';
-      $contents .= 'open="' . $e['open']  . '"' . $item_extra . ']' . $e['content'] . '[/csl_adv_accordion_item]';
+      $contents .= 'open="' . $e['open']  . '"' . $item_extra . ']' . $e['content'] . '[/csl_color_accordion_item]';
 
     }
 
-    $shortcode = "[csl_adv_accordion{$extra}]{$contents}[/csl_adv_accordion]";
+    $shortcode = "[csl_color_accordion{$extra}]{$contents}[/csl_color_accordion]";
 
     return $shortcode;
 
