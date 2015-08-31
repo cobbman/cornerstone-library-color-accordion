@@ -11,6 +11,11 @@
 .x-accordion.advanced .x-accordion-heading .x-accordion-toggle:before {
   color: #fff;
   float: left;
+  content: "";
+  transform: rotate(90deg);
+}
+.x-accordion .x-accordion-heading .x-accordion-toggle.collapsed:before {
+  transform: rotate(0);
 }
 .x-accordion.advanced .x-accordion-heading .x-accordion-toggle .adv-title {
   display: block;
@@ -31,6 +36,9 @@
     font-size: 50px;
     text-align: left;
   }
+  .x-accordion.advanced .x-accordion-heading .x-accordion-toggle:before {
+    content: "\f0da";
+  }
   .x-accordion.advanced .x-accordion-heading .x-accordion-toggle .adv-title {
     float: left;
     width: 50%;
@@ -44,7 +52,7 @@
 }
 @media screen and (min-width: 1200px) {
   .x-accordion.advanced .x-accordion-heading .x-accordion-toggle {
-    font-size: 70px;
+    /*font-size: 70px;*/
   }
   .x-accordion.advanced .x-accordion-heading .x-accordion-toggle .extra-title {
     display: inline;
