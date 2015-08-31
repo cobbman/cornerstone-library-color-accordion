@@ -19,7 +19,7 @@ if ( ! defined( 'WPINC' ) ) {
 /*
  * => Enqueue Scripts
  * ---------------------------------------------------------------------------*/
-function csl_adv_accorion_scripts() {
+function csl_adv_accordion_scripts() {
 	// wp_enqueue_script( 'csl-advanced-accordion-script', plugins_url('/assets/js/custom.js', __FILE__ ), array('jquery'), null, true );
 	wp_enqueue_style('csl-advanced-accordion-styles', plugins_url('/assets/css/custom.css', __FILE__ ), array(), '1.0' );
 }

@@ -1,6 +1,6 @@
 <?php
 
-class CS_Adv_Accordion_Item extends Cornerstone_Element_Base {
+class CSL_Adv_Accordion_Item extends Cornerstone_Element_Base {
 
   public function data() {
     return array(

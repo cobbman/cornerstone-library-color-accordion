@@ -8,7 +8,7 @@ function csl_shortcode_adv_accordion( $atts, $content = null ) {
     'id'    => '',
     'class' => '',
     'style' => ''
-  ), $atts, 'x_accordion' ) );
+  ), $atts, 'csl_adv_accordion' ) );
 
   $id    = ( $id    != '' ) ? 'id="' . esc_attr( $id ) . '"' : '';
   $class = ( $class != '' ) ? 'x-accordion advanced ' . esc_attr( $class ) : 'x-accordion advanced';
@@ -28,15 +28,15 @@ add_shortcode( 'csl_adv_accordion', 'csl_shortcode_adv_accordion' );
 
 function csl_shortcode_adv_accordion_item( $atts, $content = null ) {
   extract( shortcode_atts( array(
-    'id'        => '',
-    'class'     => '',
-    'style'     => '',
-    'parent_id' => '',
-    'title'     => '',
+    'id'          => '',
+    'class'       => '',
+    'style'       => '',
+    'parent_id'   => '',
+    'title'       => '',
     'title_extra' => '',
-    'bg_color' => '',
-    'open'      => ''
-  ), $atts, 'x_accordion_item' ) );
+    'bg_color'    => '',
+    'open'        => ''
+  ), $atts, 'csl_adv_accordion_item' ) );
 
   $id        = ( $id        != ''     ) ? 'id="' . esc_attr( $id ) . '"' : '';
   $class     = ( $class     != ''     ) ? 'x-accordion-group ' . esc_attr( $class ) : 'x-accordion-group';
