@@ -1,5 +1,7 @@
 .x-accordion.advanced .x-accordion-group {
   margin-bottom: 0;
+  border: none;
+  box-shadow: none;
 }
 .x-accordion.advanced .x-accordion-heading .x-accordion-toggle {
   background-color: auto;
@@ -23,13 +25,16 @@
 }
 .x-accordion.advanced .x-accordion-heading .x-accordion-toggle .extra-title {
   display: block;
-  font-size: 20px;
+  font-size: 38%;
 }
 .x-accordion.advanced .x-accordion-heading.collapsed:before {
   color: #fff;
 }
 .x-accordion.advanced .x-accordion-inner {
+  border: 1px solid #ccc;
   color: #002a5b;
+  font-size: 120%;
+  padding: 1em 2em;
 }
 @media screen and (min-width: 979px) {
   .x-accordion.advanced .x-accordion-heading .x-accordion-toggle {
@@ -46,7 +51,7 @@
   .x-accordion.advanced .x-accordion-heading .x-accordion-toggle .extra-title {
     display: block;
     float: left;
-    font-size: 18px;
+    /*font-size: 18px;*/
     margin-left: 2em;
   }
 }
@@ -56,6 +61,6 @@
   }
   .x-accordion.advanced .x-accordion-heading .x-accordion-toggle .extra-title {
     display: inline;
-    font-size: 20px;
+    font-size: 40%;
   }
 }
