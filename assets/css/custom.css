@@ -1,0 +1,53 @@
+.x-accordion.advanced .x-accordion-group {
+  margin-bottom: 0;
+}
+.x-accordion.advanced .x-accordion-heading .x-accordion-toggle {
+  background-color: auto;
+  color: #fff;
+  font-size: 40px;
+  overflow: hidden;
+  text-align: center;
+}
+.x-accordion.advanced .x-accordion-heading .x-accordion-toggle:before {
+  color: #fff;
+  float: left;
+}
+.x-accordion.advanced .x-accordion-heading .x-accordion-toggle .adv-title {
+  display: block;
+  line-height: 1.1;
+}
+.x-accordion.advanced .x-accordion-heading .x-accordion-toggle .extra-title {
+  display: block;
+  font-size: 20px;
+}
+.x-accordion.advanced .x-accordion-heading.collapsed:before {
+  color: #fff;
+}
+.x-accordion.advanced .x-accordion-inner {
+  color: #002a5b;
+}
+@media screen and (min-width: 979px) {
+  .x-accordion.advanced .x-accordion-heading .x-accordion-toggle {
+    font-size: 50px;
+    text-align: left;
+  }
+  .x-accordion.advanced .x-accordion-heading .x-accordion-toggle .adv-title {
+    float: left;
+    width: 50%;
+  }
+  .x-accordion.advanced .x-accordion-heading .x-accordion-toggle .extra-title {
+    display: block;
+    float: left;
+    font-size: 18px;
+    margin-left: 2em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .x-accordion.advanced .x-accordion-heading .x-accordion-toggle {
+    font-size: 70px;
+  }
+  .x-accordion.advanced .x-accordion-heading .x-accordion-toggle .extra-title {
+    display: inline;
+    font-size: 20px;
+  }
+}
